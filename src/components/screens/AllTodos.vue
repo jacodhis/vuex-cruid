@@ -36,7 +36,6 @@ export default {
    methods:{
        ...mapActions(['fetchTodos','deleteTodo','updateTodos']),
        onDblclick(todo){
-     
            const updateTodo = {
                id:todo.id,
                title:todo.title,
@@ -48,7 +47,6 @@ export default {
        handleDelete(id){
           this.deleteTodo(id)
        }
-      
    },
    computed:mapGetters(['allTodos']),
    created(){
